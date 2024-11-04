@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "JetPackComposeLogin"
 include(":app")
- 
+include(":lib2")

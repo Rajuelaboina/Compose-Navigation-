@@ -10,6 +10,8 @@ data class Product(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
     val id: Int,
+    @ColumnInfo(name = "pid")
+    val pid: Int,
     @ColumnInfo(name = "name")
     val name: String,
     @ColumnInfo(name = "color")
@@ -24,4 +26,6 @@ data class Product(
     val rating: Float,
     @ColumnInfo(name = "imageRes")
     @DrawableRes val imageRes: Int,
+    @ColumnInfo(name = "badgeCount")
+    val badgeCount: Int? = null
 )

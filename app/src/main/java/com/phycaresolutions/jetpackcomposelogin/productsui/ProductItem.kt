@@ -41,7 +41,9 @@ import com.phycaresolutions.jetpackcomposelogin.R
 @Composable
 fun ProductItem(
     product: Product = Product(
+
         id = 1,
+        pid = 1,
         "Shoes - Pink 10",
         color = android.graphics.Color.MAGENTA,
         price = 1200f,

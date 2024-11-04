@@ -47,95 +47,105 @@ fun getProductList(): List<Product>{
     return listOf(
         Product(
             id = 1,
+            pid = 1,
             "Shoes - Pink 8",
             color = android.graphics.Color.MAGENTA,
             price = 1200f,
             discountPrice = 1100f,
             size = 8,
             rating = 4.5f,
-            imageRes = R.drawable.s_1
+            imageRes = R.drawable.ic_launcher_foreground
         ), Product(
-            id = 2,
+            id = 0,
+            pid = 2,
             "Shoes - Blue 10",
             color = android.graphics.Color.BLUE,
             price = 1300f,
             discountPrice = 1200f,
             size = 10,
             rating = 4.3f,
-            imageRes = R.drawable.s_2
+            imageRes = R.drawable.ic_launcher_foreground
         ), Product(
-            id = 3,
+            id = 0,
+            pid = 3,
             "Shoes - Green 11",
             color = android.graphics.Color.GREEN,
             price = 1400f,
             discountPrice = 1140f,
             size = 11,
             rating = 4.4f,
-            imageRes = R.drawable.s_3
+            imageRes = R.drawable.ic_launcher_foreground
         ), Product(
-            id = 4,
+            id = 0,
+            pid = 4,
             "Shoes - RED 10",
             color = android.graphics.Color.RED,
             price = 1300f,
             discountPrice = 1200f,
             size = 10,
             rating = 4.2f,
-            imageRes = R.drawable.s_4
+            imageRes = R.drawable.ic_launcher_foreground
         ), Product(
-            id = 5,
+            id = 0,
+            pid = 5,
             "Shoes - Yellow 9",
             color = android.graphics.Color.YELLOW,
             price = 1200f,
             discountPrice = 1000f,
             size = 9,
             rating = 4.0f,
-            imageRes = R.drawable.s_5
+            imageRes = R.drawable.ic_launcher_foreground
         ),
         Product(
-            id = 6,
+            id = 0,
+            pid = 6,
             "Shoes - Pink 8",
             color = android.graphics.Color.MAGENTA,
             price = 1200f,
             discountPrice = 1100f,
             size = 8,
             rating = 4.5f,
-            imageRes = R.drawable.s_6
+            imageRes = R.drawable.ic_launcher_foreground
         ), Product(
-            id = 7,
+            id = 0,
+            pid = 7,
             "Shoes - Blue 10",
             color = android.graphics.Color.BLUE,
             price = 1300f,
             discountPrice = 1200f,
             size = 10,
             rating = 4.3f,
-            imageRes = R.drawable.s_2
+            imageRes = R.drawable.ic_launcher_foreground
         ), Product(
-            id = 8,
+            id = 0,
+            pid = 8,
             "Shoes - Green 11",
             color = android.graphics.Color.GREEN,
             price = 1400f,
             discountPrice = 1140f,
             size = 11,
             rating = 4.4f,
-            imageRes = R.drawable.s_3
+            imageRes = R.drawable.ic_launcher_foreground
         ), Product(
-            id = 9,
+            id = 0,
+            pid = 9,
             "Shoes - RED 10",
             color = android.graphics.Color.RED,
             price = 1300f,
             discountPrice = 1200f,
             size = 10,
             rating = 4.2f,
-            imageRes = R.drawable.s_7
+            imageRes = R.drawable.ic_launcher_foreground
         ), Product(
-            id = 10,
+            id = 0,
+            pid = 10,
             "Shoes - Yellow 9",
             color = android.graphics.Color.YELLOW,
             price = 1200f,
             discountPrice = 1000f,
             size = 9,
             rating = 4.0f,
-            imageRes = R.drawable.s_8
+            imageRes = R.drawable.ic_launcher_foreground
         )
     )
 }

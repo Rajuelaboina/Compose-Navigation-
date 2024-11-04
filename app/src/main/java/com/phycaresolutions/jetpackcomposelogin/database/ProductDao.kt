@@ -11,4 +11,6 @@ interface ProductDao {
     fun insert(product: Product):Long
     @Query("SELECT COUNT (*) FROM product")
     fun getCarCount():Int
+    @Query("SELECT * FROM product")
+    fun getAllProduct():List<Product>
 }

@@ -7,6 +7,7 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
+import com.phycaresolutions.jetpackcomposelogin.bottombar.screens.BottomCart
 import com.phycaresolutions.jetpackcomposelogin.bottombar.screens.BottomNotifications
 import com.phycaresolutions.jetpackcomposelogin.bottombar.screens.BottomSettings
 import com.phycaresolutions.jetpackcomposelogin.productsui.ProductDetailsScreen
@@ -31,6 +32,7 @@ fun AppNavigation (navController: NavHostController, padding: PaddingValues){
             if (productId!=null)
                 ProductDetailsScreen(productId = productId, navController = navController)
         }
+        composable(BottomRoute.SCREEN_CART){ BottomCart()}
 
     }
 

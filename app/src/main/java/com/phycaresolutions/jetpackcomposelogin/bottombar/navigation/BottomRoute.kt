@@ -8,5 +8,6 @@ object BottomRoute {
     const val PRODUCT = "products"
     const val PRODUCT_DETAILS = "product_details"
     const val HOME = "home"
+    const val SCREEN_CART ="cart"
 
 }

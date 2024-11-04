@@ -45,6 +45,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableStateOf
@@ -69,8 +70,11 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
+import com.phycaresolutions.jetpackcomposelogin.bottombar.navigation.CartItem
 import com.phycaresolutions.jetpackcomposelogin.database.DataBase
 import kotlinx.coroutines.delay
 
@@ -183,8 +187,8 @@ fun ProductDetailsScreen(
                 modifier = Modifier
                     .scale(animationProductScale.value)
                     .rotate(animationProductRotate.value)
-                    .padding(end = 48.dp, top = 30.dp)
-                    .size(320.dp),
+                    .padding(end = 38.dp, top = 30.dp)
+                    .size(220.dp),
                 painter = painterResource(id = product.imageRes),
                 contentDescription = null
             )
@@ -391,11 +395,14 @@ fun ProductDetailsScreen(
                     onClick = {
                        // navController.navigate(NavigationItem.HOME)
                       val result = DataBase.getInstance(content).productDao().insert(
-                           Product(product.id,product.name,product.color,product.price,product.discountPrice,product.size,product.rating,product.imageRes)
+                           Product(product.id,product.pid,product.name,product.color,product.price,product.discountPrice,product.size,product.rating,product.imageRes)
                        )
                         if (result > 0){
                             Toast.makeText(content,"Item add to cart",Toast.LENGTH_SHORT).show()
                             Log.e("Database>>>>>>", "Data insert successfully : $result")
+                            //CartItem.cartCount( DataBase.getInstance(content).productDao().getCarCount())
+                            CartItem.cartCount(DataBase.getInstance(content).productDao().getCarCount())
+
                         }else{
                             Toast.makeText(content,"Item not add to cart",Toast.LENGTH_SHORT).show()
                             Log.e("Database>>>>>>","Data Not inserted"+result)
@@ -410,7 +417,10 @@ fun ProductDetailsScreen(
             }
         }
     }
+
+
 }
+
 
 @Composable
 fun ProductSizeCard(
