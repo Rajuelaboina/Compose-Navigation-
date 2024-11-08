@@ -48,6 +48,9 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -61,6 +64,10 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -78,5 +85,6 @@ dependencies {
     implementation("androidx.compose.foundation:foundation:1.4.1")
     implementation("com.google.accompanist:accompanist-pager-indicators:0.30.1")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.7.0")
-
+    implementation(libs.play.services.maps)
+    implementation(libs.play.services.location)
 }

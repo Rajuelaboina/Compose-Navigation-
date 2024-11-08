@@ -25,7 +25,8 @@ fun even(x:Int, operation: (Int) -> Unit) {
      operation(x)
 }
 
-fun caluclator(x: Int, y: Int, operation: (Int,Int)-> Int) {
+@Suppress("SuspiciousIndentation")
+fun caluclator(x: Int, y: Int, operation: (Int, Int)-> Int) {
   val result = operation(x,y)
     println(result)
 }
