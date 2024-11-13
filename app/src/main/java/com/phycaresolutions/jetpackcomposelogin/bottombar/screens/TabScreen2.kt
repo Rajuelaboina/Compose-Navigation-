@@ -21,7 +21,7 @@ import com.phycaresolutions.jetpackcomposelogin.R
 
 @Preview(showBackground = true)
 @Composable
-fun TabScreen2() {
+fun TabScreen1() {
     val list = listOf(R.drawable.s_1,R.drawable.s_2,R.drawable.s_3,R.drawable.ic_launcher_foreground,
         R.drawable.doctor,
         R.drawable.s_4,R.drawable.s_5,R.drawable.s_6,R.drawable.s_7,R.drawable.s_8)

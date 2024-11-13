@@ -67,7 +67,8 @@ fun LoginScreen(navController: NavController) {
                 TextField(value = text,
                     onValueChange = { text =it},
                     label = { Text(text = "Username") },
-                    modifier = Modifier.fillMaxWidth()
+                    modifier = Modifier.fillMaxWidth(),
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text),
                 )
                 TextField(value = password,
                     onValueChange = { password =it},

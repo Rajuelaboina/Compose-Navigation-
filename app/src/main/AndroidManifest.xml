@@ -16,7 +16,7 @@
         android:theme="@style/Theme.JetPackComposeLogin"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity2"
+            android:name=".MainActivity"
             android:exported="true"
             android:label="@string/title_activity_main2"
             android:theme="@style/Theme.JetPackComposeLogin">
@@ -37,7 +37,7 @@
             </intent-filter>-->
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivity2"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.JetPackComposeLogin">
